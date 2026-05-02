@@ -1,13 +1,13 @@
 <div align="center">
 
-# 🩺 Diabetes Prediction — End to End
+# Diabetes Prediction — End to End
 
 [![Python](https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-Web%20App-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Model-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-1abc9c?style=for-the-badge)](../LICENSE.md)
 
-> A full **end-to-end machine learning web application** that predicts the likelihood of diabetes in a patient based on key health diagnostics — from model training to a live Flask deployment.
+> A complete **end-to-end machine learning web application** designed to predict the likelihood of diabetes in a patient using key health indicators — from model development to a live Flask deployment.
 
 [🔙 Back to Main Repository](https://github.com/shsarv/Machine-Learning-Projects)
 
@@ -30,14 +30,14 @@
 
 ## 🧠 About the Project
 
-Diabetes is one of the most prevalent chronic diseases worldwide, and early detection significantly improves patient outcomes. This project builds a **binary classification model** to predict whether a patient is likely to have diabetes based on diagnostic measurements, and wraps it in an interactive **Flask web application** so anyone can get a prediction by entering their health values.
+Diabetes is one of the most common chronic diseases across the world, and identifying it early can greatly improve health outcomes. This project develops a **binary classification model** to estimate whether a patient is likely to have diabetes using diagnostic measurements, and then integrates that model into an interactive **Flask web application** where users can enter their health values and receive a prediction.
 
-**What this project covers:**
-- Exploratory data analysis (EDA) and data preprocessing
-- Feature engineering and handling class imbalance
-- Training and comparing multiple ML classifiers
-- Serializing the best model with `pickle`
-- Building and deploying a Flask web app with a clean UI
+**What this project includes:**
+- Exploratory data analysis (EDA) and preprocessing
+- Feature engineering and class imbalance handling
+- Training and comparing multiple machine learning classifiers
+- Saving the best model using `pickle`
+- Creating and deploying a Flask app with a simple UI
 
 ---
 
@@ -71,7 +71,7 @@ Diabetes is one of the most prevalent chronic diseases worldwide, and early dete
 
 ## 🤖 Model & Performance
 
-Multiple classifiers were trained and evaluated. The best-performing model was selected for deployment.
+Several classifiers were trained and evaluated, and the strongest performer was chosen for deployment.
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|:--------:|:---------:|:------:|:--------:|
@@ -82,12 +82,12 @@ Multiple classifiers were trained and evaluated. The best-performing model was s
 | **Random Forest** ✅ | **~81%** | **~78%** | **~72%** | **~75%** |
 | Gradient Boosting | ~80% | ~76% | ~71% | ~73% |
 
-> ✅ **Random Forest** selected as the final model based on highest overall accuracy and F1-score.
+> ✅ **Random Forest** was selected as the final model because it delivered the best overall accuracy and F1-score.
 
 **Preprocessing steps:**
-- Replaced biologically implausible zero values (e.g., `Glucose = 0`) with feature medians
-- Scaled features using `StandardScaler`
-- Split data: 80% train / 20% test with stratification
+- Replaced medically invalid zero values (for example, `Glucose = 0`) with feature medians
+- Standardized features using `StandardScaler`
+- Split the data into 80% training and 20% testing sets with stratification
 
 ---
 
@@ -188,7 +188,7 @@ jupyter notebook notebooks/diabetes_prediction.ipynb
 
 ---
 
-## 📚 References
+## References
 
 - [Pima Indians Diabetes Dataset — Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
 - [scikit-learn Documentation](https://scikit-learn.org/stable/)
